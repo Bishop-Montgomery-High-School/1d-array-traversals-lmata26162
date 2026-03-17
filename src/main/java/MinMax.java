@@ -15,10 +15,13 @@ public class MinMax {
      */
     public int min(int[] arr) {
         // TODO: initialize a tracking variable to arr[0]
-
+        int[] num = {5, 3, 8, 1, 6};
         // TODO: loop from index 1 to arr.length - 1
         //       if arr[i] is less than your tracking variable, update it
-
+        int min = arr[0];
+        for(int i = 1; i < arr.length; i++){
+            if(nums)
+        }
         // TODO: return the tracking variable
         return 0; // placeholder
     }
