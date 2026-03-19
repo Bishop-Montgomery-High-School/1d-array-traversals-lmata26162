@@ -15,15 +15,16 @@ public class MinMax {
      */
     public int min(int[] arr) {
         // TODO: initialize a tracking variable to arr[0]
-        int[] num = {5, 3, 8, 1, 6};
+        int min = arr[0];
         // TODO: loop from index 1 to arr.length - 1
         //       if arr[i] is less than your tracking variable, update it
-        int min = arr[0];
         for(int i = 1; i < arr.length; i++){
-            if(nums)
+            if(arr[i] < min){
+                min = arr[i];
+            }
         }
         // TODO: return the tracking variable
-        return 0; // placeholder
+        return min; // placeholder
     }
 
     /**
@@ -40,11 +41,15 @@ public class MinMax {
      */
     public int max(int[] arr) {
         // TODO: initialize a tracking variable to arr[0]
-
+        int max = arr[0];
         // TODO: loop from index 1 to arr.length - 1
         //       if arr[i] is greater than your tracking variable, update it
-
+        for(int i = 1; i < arr.length; i++){
+            if(arr[i] > max){
+                max = arr[i];
+            }
+        }
         // TODO: return the tracking variable
-        return 0; // placeholder
+        return max; // placeholder
     }
 }
